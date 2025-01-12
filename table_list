@@ -1,0 +1,447 @@
+INSERT INTO Country (country_name, confederation) VALUES
+
+INSERT INTO Leagues (league_name, country_name, division) VALUES
+
+INSERT INTO Clubs (club_name, league_name, country_name, home_stadium) VALUES
+
+INSERT INTO Players (name, position, birth_date, country_name, club_name, height) VALUES
+
+INSERT INTO Country (country_name, confederation) VALUES
+-- アジアサッカー連盟（AFC）
+('Japan', 'AFC'),
+('South Korea', 'AFC'),
+('Australia', 'AFC'),
+('Saudi Arabia', 'AFC'),
+('Iran', 'AFC'),
+('Qatar', 'AFC'),
+('China', 'AFC'),
+('United Arab Emirates', 'AFC'),
+('Iraq', 'AFC'),
+('Uzbekistan', 'AFC'),
+('Indonesia', 'AFC'),
+('Thailand', 'AFC'),
+('Vietnam', 'AFC'),
+('Malaysia', 'AFC'),
+('Oman', 'AFC'),
+
+-- ヨーロッパサッカー連盟（UEFA）
+('England', 'UEFA'),
+('Spain', 'UEFA'),
+('Germany', 'UEFA'),
+('France', 'UEFA'),
+('Italy', 'UEFA'),
+('Portugal', 'UEFA'),
+('Netherlands', 'UEFA'),
+('Belgium', 'UEFA'),
+('Croatia', 'UEFA'),
+('Denmark', 'UEFA'),
+('Switzerland', 'UEFA'),
+('Poland', 'UEFA'),
+('Serbia', 'UEFA'),
+('Wales', 'UEFA'),
+('Sweden', 'UEFA'),
+
+-- 南米サッカー連盟（CONMEBOL）
+('Brazil', 'CONMEBOL'),
+('Argentina', 'CONMEBOL'),
+('Uruguay', 'CONMEBOL'),
+('Colombia', 'CONMEBOL'),
+('Chile', 'CONMEBOL'),
+('Peru', 'CONMEBOL'),
+('Paraguay', 'CONMEBOL'),
+('Ecuador', 'CONMEBOL'),
+('Venezuela', 'CONMEBOL'),
+('Bolivia', 'CONMEBOL'),
+
+-- アフリカサッカー連盟（CAF）
+('Senegal', 'CAF'),
+('Morocco', 'CAF'),
+('Tunisia', 'CAF'),
+('Nigeria', 'CAF'),
+('Egypt', 'CAF'),
+('Cameroon', 'CAF'),
+('Algeria', 'CAF'),
+('Mali', 'CAF'),
+('Ivory Coast', 'CAF'),
+('Ghana', 'CAF'),
+
+-- 北中米カリブ海サッカー連盟（CONCACAF）
+('United States', 'CONCACAF'),
+('Mexico', 'CONCACAF'),
+('Canada', 'CONCACAF'),
+('Costa Rica', 'CONCACAF'),
+('Panama', 'CONCACAF'),
+('Jamaica', 'CONCACAF'),
+('Honduras', 'CONCACAF'),
+('El Salvador', 'CONCACAF'),
+('Trinidad and Tobago', 'CONCACAF'),
+('Haiti', 'CONCACAF');
+
+
+INSERT INTO Leagues (league_name, country_name, division) VALUES
+-- イングランド
+('Premier League', 'England', 1),
+('Championship', 'England', 2),
+('League One', 'England', 3),
+-- スペイン
+('La Liga', 'Spain', 1),
+('La Liga 2', 'Spain', 2),
+-- ドイツ
+('Bundesliga', 'Germany', 1),
+('2. Bundesliga', 'Germany', 2),
+-- フランス
+('Ligue 1', 'France', 1),
+('Ligue 2', 'France', 2),
+-- イタリア
+('Serie A', 'Italy', 1),
+('Serie B', 'Italy', 2),
+-- オランダ
+('Eredivisie', 'Netherlands', 1),
+('Eerste Divisie', 'Netherlands', 2),
+-- ポルトガル
+('Primeira Liga', 'Portugal', 1),
+('Liga Portugal 2', 'Portugal', 2),
+-- ベルギー
+('Jupiter Pro League', 'Belgium', 1),
+('Challenger Pro League', 'Belgium', 2),
+-- 日本
+('J1 League', 'Japan', 1),
+('J2 League', 'Japan', 2),
+('J3 League', 'Japan', 3),
+-- 韓国
+('K League 1', 'South Korea', 1),
+-- サウジアラビア
+('Saudi Professional League', 'Saudi Arabia', 1),
+-- 中国
+('Chinese Super League', 7, 1),
+-- インドネシア
+('Liga 1', 'Indonesia', 1),
+-- ブラジル
+('Brasileiro Série A', 'Brazil', 1),
+-- アルゼンチン
+('Primera División', 'Argentina', 1),
+-- アメリカ
+('Major League Soccer', 'United States', 1),
+-- メキシコ
+('Liga MX', 'Mexico', 1),
+
+
+INSERT INTO Clubs (club_name, league_name, country_name, home_stadium) VALUES
+-- Premier League (20 clubs)
+('Arsenal', 'Premier League', 'England', 'Emirates Stadium'),
+('Aston Villa', 'Premier League', 'England', 'Villa Park'),
+('Bournemouth', 'Premier League', 'England', 'Vitality Stadium'),
+('Brentford', 'Premier League', 'England', 'Gtech Community Stadium'),
+('Brighton & Hove Albion', 'Premier League', 'England', 'American Express Community Stadium'),
+('Chelsea', 'Premier League', 'England', 'Stamford Bridge'),
+('Crystal Palace', 'Premier League', 'England', 'Selhurst Park'),
+('Everton', 'Premier League', 'England', 'Goodison Park'),
+('Fulham', 'Premier League', 'England', 'Craven Cottage'),
+('Liverpool', 'Premier League', 'England', 'Anfield'),
+('Manchester City', 'Premier League', 'England', 'Etihad Stadium'),
+('Manchester United', 'Premier League', 'England', 'Old Trafford'),
+('Newcastle United', 'Premier League', 'England', 'St James Park'),
+('Nottingham Forest', 'Premier League', 'England', 'City Ground'),
+('Tottenham Hotspur', 'Premier League', 'England', 'Tottenham Hotspur Stadium'),
+('West Ham United', 'Premier League', 'England', 'London Stadium'),
+('Wolverhampton Wanderers', 'Premier League', 'England', 'Molineux Stadium'),
+('Southampton', 'Championship', 'England', 'St Marys Stadium'),
+('Ipswich Town', 'Championship', 'England', 'Portman Road'),
+('Leicester City', 'Championship', 'England', 'King Power Stadium'),
+
+-- Championship (24 clubs)
+('Burnley', 'Premier League', 'England', 'Turf Moor'),
+('West Bromwich Albion', 'Championship', 'England', 'The Hawthorns');
+('Sheffield United', 'Championship', 'England', 'Bramall Lane'),
+('Luton Town', 'Premier League', 'England', 'Kenilworth Road'),
+('Bristol City', 'Championship', 'England', 'Ashton Gate'),
+('Coventry City', 'Championship', 'England', 'Coventry Building Society Arena'),
+('Hull City', 'Championship', 'England', 'MKM Stadium'),
+('Blackburn Rovers', 'Championship', 'England', 'Ewood Park'),
+('Leeds United', 'Championship', 'England', 'Elland Road'),
+('Cardiff City', 'Championship', 'England', 'Cardiff City Stadium'),
+('Middlesbrough', 'Championship', 'England', 'Riverside Stadium'),
+('Millwall', 'Championship', 'England', 'The Den'),
+('Norwich City', 'Championship', 'England', 'Carrow Road'),
+('Plymouth Argyle', 'Championship', 'England', 'Home Park'),
+('Preston North End', 'Championship', 'England', 'Deepdale'),
+('Queens Park Rangers', 'Championship', 'England', 'Loftus Road'),
+('Rotherham United', 'Championship', 'England', 'AESSEAL New York Stadium'),
+('Sheffield Wednesday', 'Championship', 'England', 'Hillsborough'),
+('Stoke City', 'Championship', 'England', 'bet365 Stadium'),
+('Sunderland', 'Championship', 'England', 'Stadium of Light'),
+('Swansea City', 'Championship', 'England', 'Swansea.com Stadium'),
+('Watford', 'Championship', 'England', 'Vicarage Road'),
+
+('Huddersfield Town', 'League One', 'England', 'John Smiths Stadium'),
+('Birmingham City', 'League One', 'England', 'St Andrews'),
+INSERT INTO Clubs (club_name, league_name, country_name, home_stadium) VALUES
+-- La Liga（スペイン：20クラブ）
+('Real Madrid', 'La Liga', 'Spain', 'Santiago Bernabéu'),
+('Barcelona', 'La Liga', 'Spain', 'Estadi Olímpic Lluís Companys'),
+('Atlético Madrid', 'La Liga', 'Spain', 'Civitas Metropolitano'),
+('Real Sociedad', 'La Liga', 'Spain', 'Reale Arena'),
+('Athletic Club', 'La Liga', 'Spain', 'San Mamés'),
+('Real Betis', 'La Liga', 'Spain', 'Benito Villamarín'),
+('Valencia', 'La Liga', 'Spain', 'Mestalla'),
+('Las Palmas', 'La Liga', 'Spain', 'Estadio Gran Canaria'),
+('Girona', 'La Liga', 'Spain', 'Estadi Montilivi'),
+('Getafe', 'La Liga', 'Spain', 'Coliseum Alfonso Pérez'),
+('Osasuna', 'La Liga', 'Spain', 'El Sadar'),
+('Villarreal', 'La Liga', 'Spain', 'Estadio de la Cerámica'),
+('Alavés', 'La Liga', 'Spain', 'Mendizorroza'),
+('Rayo Vallecano', 'La Liga', 'Spain', 'Campo de Fútbol de Vallecas'),
+('Sevilla', 'La Liga', 'Spain', 'Ramón Sánchez Pizjuán'),
+('Mallorca', 'La Liga', 'Spain', 'Visit Mallorca Estadi'),
+('Celta Vigo', 'La Liga', 'Spain', 'Abanca Balaídos'),
+('Granada', 'La Liga', 'Spain', 'Nuevo Estadio de Los Cármenes'),
+('Almería', 'La Liga', 'Spain', 'Power Horse Stadium'),
+('Cádiz', 'La Liga', 'Spain', 'Nuevo Mirandilla'),
+
+-- Bundesliga（ドイツ：18クラブ）
+('Bayern Munich', 'Bundesliga', 'Germany', 'Allianz Arena'),
+('Bayer Leverkusen', 'Bundesliga', 'Germany', 'BayArena'),
+('RB Leipzig', 'Bundesliga', 'Germany', 'Red Bull Arena'),
+('Borussia Dortmund', 'Bundesliga', 'Germany', 'Signal Iduna Park'),
+('Stuttgart', 'Bundesliga', 'Germany', 'MHPArena'),
+('Eintracht Frankfurt', 'Bundesliga', 'Germany', 'Deutsche Bank Park'),
+('SC Freiburg', 'Bundesliga', 'Germany', 'Europa-Park Stadion'),
+('Wolfsburg', 'Bundesliga', 'Germany', 'Volkswagen Arena'),
+('Heidenheim', 'Bundesliga', 'Germany', 'Voith-Arena'),
+('Hoffenheim', 'Bundesliga', 'Germany', 'PreZero Arena'),
+('Borussia Mönchengladbach', 'Bundesliga', 'Germany', 'Borussia-Park'),
+('Werder Bremen', 'Bundesliga', 'Germany', 'Wohninvest Weserstadion'),
+('FC Augsburg', 'Bundesliga', 'Germany', 'WWK Arena'),
+('Union Berlin', 'Bundesliga', 'Germany', 'Stadion An der Alten Försterei'),
+('Bochum', 'Bundesliga', 'Germany', 'Vonovia Ruhrstadion'),
+('Mainz 05', 'Bundesliga', 'Germany', 'MEWA Arena'),
+('FC Köln', 'Bundesliga', 'Germany', 'RheinEnergieSTADION'),
+('Darmstadt 98', 'Bundesliga', 'Germany', 'Merck-Stadion am Böllenfalltor'),
+
+-- Ligue 1（フランス：18クラブ）
+('Paris Saint-Germain', 'Ligue 1', 'France', 'Parc des Princes'),
+('AS Monaco', 'Ligue 1', 'France', 'Stade Louis II'),
+('Lille', 'Ligue 1', 'France', 'Stade Pierre-Mauroy'),
+('Nice', 'Ligue 1', 'France', 'Allianz Riviera'),
+('Lens', 'Ligue 1', 'France', 'Stade Bollaert-Delelis'),
+('Olympique Marseille', 'Ligue 1', 'France', 'Orange Vélodrome'),
+('Olympique Lyonnais', 'Ligue 1', 'France', 'Groupama Stadium'),
+('Rennes', 'Ligue 1', 'France', 'Roazhon Park'),
+('Reims', 'Ligue 1', 'France', 'Stade Auguste-Delaune'),
+('Strasbourg', 'Ligue 1', 'France', 'Stade de la Meinau'),
+('Toulouse', 'Ligue 1', 'France', 'Stadium de Toulouse'),
+('Nantes', 'Ligue 1', 'France', 'Stade de la Beaujoire'),
+('Le Havre', 'Ligue 1', 'France', 'Stade Océane'),
+('Montpellier', 'Ligue 1', 'France', 'Stade de la Mosson'),
+('Metz', 'Ligue 1', 'France', 'Stade Saint-Symphorien'),
+('Brest', 'Ligue 1', 'France', 'Stade Francis-Le Blé'),
+('Lorient', 'Ligue 1', 'France', 'Stade du Moustoir'),
+('Clermont Foot', 'Ligue 1', 'France', 'Stade Gabriel Montpied');
+
+INSERT INTO Clubs (club_name, league_name, country_name, home_stadium) VALUES
+-- J1リーグ所属クラブ
+('Vissel Kobe', 'J1 League', 'Japan', 'Noevir Stadium Kobe'),
+('Urawa Red Diamonds', 'J1 League', 'Japan', 'Saitama Stadium 2002'),
+('Yokohama F. Marinos', 'J1 League', 'Japan', 'Nissan Stadium'),
+('Kashima Antlers', 'J1 League', 'Japan', 'Kashima Soccer Stadium'),
+('Kawasaki Frontale', 'J1 League', 'Japan', 'Todoroki Athletics Stadium'),
+('Nagoya Grampus', 'J1 League', 'Japan', 'Mizuho Athletic Stadium'),
+('Cerezo Osaka', 'J1 League', 'Japan', 'Yodoko Sakura Stadium'),
+('Gamba Osaka', 'J1 League', 'Japan', 'Panasonic Stadium Suita'),
+('Sanfrecce Hiroshima', 'J1 League', 'Japan', 'Edion Stadium Hiroshima'),
+('Avispa Fukuoka', 'J1 League', 'Japan', 'Best Denki Stadium'),
+('FC Tokyo', 'J1 League', 'Japan', 'Ajinomoto Stadium'),
+('Kashiwa Reysol', 'J1 League', 'Japan', 'Sankyo Frontier Kashiwa Stadium'),
+('Kyoto Sanga', 'J1 League', 'Japan', 'Sanga Stadium by Kyocera'),
+('Shonan Bellmare', 'J1 League', 'Japan', 'Lemon Gas Stadium Hiratsuka'),
+('Sagan Tosu', 'J1 League', 'Japan', 'Ekimae Real Estate Stadium'),
+('Albirex Niigata', 'J1 League', 'Japan', 'Denka Big Swan Stadium'),
+('Machida Zelvia', 'J1 League', 'Japan', 'Noevir Stadium Machida'),
+('Urawa Reds', 'J1 League', 'Japan', 'Saitama Stadium 2002');
+('Tokyo Verdy', 'J1 League', 'Japan', 'Ajinomoto Stadium'),
+
+-- J2リーグ所属クラブ
+('Jubilo Iwata', 'J2 League', 'Japan', 'Yamaha Stadium'),
+('Ventforet Kofu', 'J2 League', 'Japan', 'Yamanashi Chuo Bank Stadium'),
+('Shimizu S-Pulse', 'J2 League', 'Japan', 'IAI Stadium Nihondaira'),
+('Consadole Sapporo', 'J2 League', 'Japan', 'Sapporo Dome'),
+('JEF United Chiba', 'J2 League', 'Japan', 'Fujida Denshi Arena'),
+('Montedio Yamagata', 'J2 League', 'Japan', 'ND Soft Stadium Yamagata'),
+('Omiya Ardija', 'J2 League', 'Japan', 'NACK5 Stadium Omiya'),
+('V-Varen Nagasaki', 'J2 League', 'Japan', 'Transcosmos Stadium Nagasaki'),
+
+-- J3リーグ所属クラブ
+('FC Ryukyu', 'J3 League', 'Japan', 'Tapic Kenso Hiyagon Stadium'),
+('Kagoshima United FC', 'J3 League', 'Japan', 'Shiranami Stadium'),
+('Kataller Toyama', 'J3 League', 'Japan', 'Toyama Athletic Stadium'),
+('Fujieda MYFC', 'J3 League', 'Japan', 'Fujieda Soccer Stadium'),
+('AC Nagano Parceiro', 'J3 League', 'Japan', 'Nagano U Stadium'),
+('SC Sagamihara', 'J3 League', 'Japan', 'Sagamihara Gion Stadium'),
+('Fukushima United FC', 'J3 League', 'Japan', 'Toho Stadium');
+
+INSERT INTO Clubs (club_name, league_name, country_name, home_stadium) VALUES
+-- K League 1（韓国）
+('Ulsan Hyundai FC', 'K League 1', 'South Korea', 'Ulsan Munsu Football Stadium'),
+('Jeonbuk Hyundai Motors', 'K League 1', 'South Korea', 'Jeonju World Cup Stadium'),
+('FC Seoul', 'K League 1', 'South Korea', 'Seoul World Cup Stadium'),
+
+-- Saudi Professional League（サウジアラビア）
+('Al Hilal', 'Saudi Professional League', 'Saudi Arabia', 'Kingdom Arena'),
+('Al Nassr', 'Saudi Professional League', 'Saudi Arabia', 'Al-Awwal Park'),
+('Al Ittihad', 'Saudi Professional League', 'Saudi Arabia', 'Prince Abdullah Al-Faisal Stadium'),
+
+-- Chinese Super League（中国）
+('Shanghai Port FC', 'Chinese Super League', 'China', 'Pudong Football Stadium'),
+('Shandong Taishan', 'Chinese Super League', 'China', 'Jinan Olympic Sports Center Stadium'),
+('Beijing Guoan', 'Chinese Super League', 'China', 'Workers Stadium'),
+
+-- Liga 1（インドネシア）
+('Persib Bandung', 'Liga 1', 'Indonesia', 'Gelora Bandung Lautan Api Stadium'),
+('Persija Jakarta', 'Liga 1', 'Indonesia', 'Jakarta International Stadium'),
+('Bali United', 'Liga 1', 'Indonesia', 'Kapten I Wayan Dipta Stadium'),
+
+-- Brasileiro Série A（ブラジル）
+('Palmeiras', 'Brasileiro Série A', 'Brazil', 'Allianz Parque'),
+('Flamengo', 'Brasileiro Série A', 'Brazil', 'Maracanã Stadium'),
+('Grêmio', 'Brasileiro Série A', 'Brazil', 'Arena do Grêmio'),
+
+-- Primera División（アルゼンチン）
+('River Plate', 'Primera División', 'Argentina', 'Estadio Monumental'),
+('Boca Juniors', 'Primera División', 'Argentina', 'La Bombonera'),
+('Racing Club', 'Primera División', 'Argentina', 'Estadio Presidente Perón'),
+
+-- Major League Soccer（アメリカ）
+('Inter Miami CF', 'Major League Soccer', 'United States', 'DRV PNK Stadium'),
+('Los Angeles FC', 'Major League Soccer', 'United States', 'BMO Stadium'),
+('Seattle Sounders FC', 'Major League Soccer', 'United States', 'Lumen Field'),
+
+-- Liga MX（メキシコ）
+('Club América', 'Liga MX', 'Mexico', 'Estadio Azteca'),
+('Tigres UANL', 'Liga MX', 'Mexico', 'Estadio Universitario'),
+('Monterrey', 'Liga MX', 'Mexico', 'Estadio BBVA');
+
+INSERT INTO Players (name, position, birth_date, country_name, club_name, height) VALUES
+-- イングランド
+('Harry Kane', 'FW', '1993-07-28', 'England', 'Bayern Munich', 188),
+('Jude Bellingham', 'MF', '2003-06-29', 'England', 'Real Madrid', 186),
+('Bukayo Saka', 'FW', '2001-09-05', 'England', 'Arsenal', 178),
+('Declan Rice', 'MF', '1999-01-14', 'England', 'Arsenal', 185),
+('Phil Foden', 'MF', '2000-05-28', 'England', 'Manchester City', 171),
+
+-- スペイン
+('Pedri', 'MF', '2002-11-25', 'Spain', 'Barcelona', 174),
+('Alvaro Morata', 'FW', '1992-10-23', 'Spain', 'Atlético Madrid', 187),
+('Rodri', 'MF', '1996-06-22', 'Spain', 'Manchester City', 191),
+('Gavi', 'MF', '2004-08-05', 'Spain', 'Barcelona', 173),
+('Lamine Yamal', 'FW', '2007-07-13', 'Spain', 'Barcelona', 175),
+
+-- フランス
+('Kylian Mbappé', 'FW', '1998-12-20', 'France', 'Paris Saint-Germain', 178),
+('Antoine Griezmann', 'FW', '1991-03-21', 'France', 'Atlético Madrid', 176),
+('Aurelien Tchouameni', 'MF', '2000-01-27', 'France', 'Real Madrid', 187),
+('Eduardo Camavinga', 'MF', '2002-11-10', 'France', 'Real Madrid', 182),
+('William Saliba', 'DF', '2001-03-24', 'France', 'Arsenal', 192),
+
+-- ドイツ
+('Jamal Musiala', 'MF', '2003-02-26', 'Germany', 'Bayern Munich', 183),
+('Florian Wirtz', 'MF', '2003-05-03', 'Germany', 'Bayer Leverkusen', 176),
+('İlkay Gündoğan', 'MF', '1990-10-24', 'Germany', 'Barcelona', 180),
+('Joshua Kimmich', 'MF', '1995-02-08', 'Germany', 'Bayern Munich', 177),
+('Leroy Sané', 'FW', '1996-01-11', 'Germany', 'Bayern Munich', 183),
+
+-- サウジアラビア
+('Salem Al-Dawsari', 'MF', '1991-08-19', 'Saudi Arabia', 'Al Hilal', 171),
+('Cristiano Ronaldo', 'FW', '1985-02-05', 'Portugal', 'Al Nassr', 187),
+('Karim Benzema', 'FW', '1987-12-19', 'France', 'Al Ittihad', 185),
+('Neymar', 'FW', '1992-02-05', 'Brazil', 'Al Hilal', 175),
+('Rúben Neves', 'MF', '1997-03-13', 'Portugal', 'Al Hilal', 180),
+
+-- アルゼンチン
+('Julián Álvarez', 'FW', '2000-01-31', 'Argentina', 'Manchester City', 170),
+('Enzo Fernández', 'MF', '2001-01-17', 'Argentina', 'Chelsea', 178),
+('Lautaro Martínez', 'FW', '1997-08-22', 'Argentina', 'Inter Milan', 174),
+('Alexis Mac Allister', 'MF', '1998-12-24', 'Argentina', 'Liverpool', 174),
+('Nicolás González', 'FW', '1998-04-06', 'Argentina', 'Fiorentina', 180),
+
+-- ブラジル
+('Vinícius Júnior', 'FW', '2000-07-12', 'Brazil', 'Real Madrid', 176),
+('Rodrygo', 'FW', '2001-01-09', 'Brazil', 'Real Madrid', 174),
+('Gabriel Martinelli', 'FW', '2001-06-18', 'Brazil', 'Arsenal', 176),
+('Bruno Guimarães', 'MF', '1997-11-16', 'Brazil', 'Newcastle United', 182),
+('Gabriel Jesus', 'FW', '1997-04-03', 'Brazil', 'Arsenal', 175),
+
+-- ポルトガル
+('Bernardo Silva', 'MF', '1994-08-10', 'Portugal', 'Manchester City', 173),
+('Bruno Fernandes', 'MF', '1994-09-08', 'Portugal', 'Manchester United', 179),
+('João Félix', 'FW', '1999-11-10', 'Portugal', 'Barcelona', 181),
+('Rafael Leão', 'FW', '1999-06-10', 'Portugal', 'AC Milan', 188),
+('Rúben Dias', 'DF', '1997-05-14', 'Portugal', 'Manchester City', 186),
+
+-- オランダ
+('Virgil van Dijk', 'DF', '1991-07-08', 'Netherlands', 'Liverpool', 193),
+('Frenkie de Jong', 'MF', '1997-05-12', 'Netherlands', 'Barcelona', 180),
+('Cody Gakpo', 'FW', '1999-05-07', 'Netherlands', 'Liverpool', 189),
+('Matthijs de Ligt', 'DF', '1999-08-12', 'Netherlands', 'Bayern Munich', 189),
+('Xavi Simons', 'MF', '2003-04-21', 'Netherlands', 'RB Leipzig', 168),
+
+-- 韓国
+('Son Heung-min', 'FW', '1992-07-08', 'South Korea', 'Tottenham Hotspur', 183),
+('Kim Min-jae', 'DF', '1996-11-15', 'South Korea', 'Bayern Munich', 190),
+('Lee Kang-in', 'MF', '2001-02-19', 'South Korea', 'Paris Saint-Germain', 173),
+('Hwang Hee-chan', 'FW', '1996-01-26', 'South Korea', 'Wolverhampton Wanderers', 177),
+('Jeong Woo-yeong', 'FW', '1999-09-20', 'South Korea', 'Stuttgart', 180),
+
+-- イラン
+('Mehdi Taremi', 'FW', '1992-07-18', 'Iran', 'Porto', 187),
+('Sardar Azmoun', 'FW', '1995-01-01', 'Iran', 'Roma', 186),
+('Alireza Jahanbakhsh', 'FW', '1993-08-11', 'Iran', 'Feyenoord', 180),
+('Saman Ghoddos', 'MF', '1993-09-06', 'Iran', 'Brentford', 177),
+('Mehdi Zare', 'MF', '2000-01-22', 'Iran', 'Porto', 181),
+
+-- ウルグアイ
+('Federico Valverde', 'MF', '1998-07-22', 'Uruguay', 'Real Madrid', 182),
+('Darwin Núñez', 'FW', '1999-06-24', 'Uruguay', 'Liverpool', 187),
+('Ronald Araújo', 'DF', '1999-03-07', 'Uruguay', 'Barcelona', 188),
+('Manuel Ugarte', 'MF', '2001-04-11', 'Uruguay', 'Paris Saint-Germain', 182),
+('Facundo Pellistri', 'FW', '2001-12-20', 'Uruguay', 'Manchester United', 174),
+
+-- コロンビア
+('Luis Díaz', 'FW', '1997-01-13', 'Colombia', 'Liverpool', 178),
+('Jhon Durán', 'FW', '2003-12-13', 'Colombia', 'Aston Villa', 185),
+('James Rodríguez', 'MF', '1991-07-12', 'Colombia', 'São Paulo', 180),
+('Rafael Santos Borré', 'FW', '1995-09-15', 'Colombia', 'Werder Bremen', 174),
+('Jhon Arias', 'MF', '1997-09-21', 'Colombia', 'Fluminense', 175),
+
+-- メキシコ
+('Hirving Lozano', 'FW', '1995-07-30', 'Mexico', 'PSV Eindhoven', 175),
+('Edson Álvarez', 'MF', '1997-10-24', 'Mexico', 'West Ham United', 187),
+('Santiago Giménez', 'FW', '2001-04-18', 'Mexico', 'Feyenoord', 183),
+('César Huerta', 'FW', '2000-09-03', 'Mexico', 'UNAM', 170),
+('Guillermo Ochoa', 'GK', '1985-07-13', 'Mexico', 'Salernitana', 183),
+
+-- インドネシア
+('Asnawi Mangkualam', 'DF', '1999-10-04', 'Indonesia', 'Jeonnam Dragons', 170),
+('Egy Maulana Vikri', 'FW', '2000-07-07', 'Indonesia', 'FK Senica', 168),
+('Jordi Amat', 'DF', '1992-03-21', 'Indonesia', 'Johor Darul Takzim', 184),
+('Witan Sulaeman', 'MF', '2001-10-08', 'Indonesia', 'FK Prishtina', 168),
+('Marc Klok', 'MF', '1993-04-20', 'Indonesia', 'Persib Bandung', 180);
+
+INSERT INTO Players (name, position, birth_date, country_name, club_name, height) VALUES
+-- 海外組
+('Kaoru Mitoma', 'MF', '1997-05-20', 'Japan', 'Brighton & Hove Albion', 178),
+('Wataru Endo', 'MF', '1993-02-09', 'Japan', 'Liverpool', 178),
+('Takehiro Tomiyasu', 'DF', '1998-11-05', 'Japan', 'Arsenal', 188),
+('Daichi Kamada', 'MF', '1996-08-05', 'Japan', 'Crystal Palace', 180),
+('Ko Itakura', 'DF', '1997-01-27', 'Japan', 'Borussia Mönchengladbach', 186),
+('Hiroki Ito', 'DF', '1999-05-12', 'Japan', ''Bayern Munich', 188),
+('Ritsu Doan', 'MF', '1998-06-16', 'Japan', 'Freiburg', 172),
+('Takefusa Kubo', 'MF', '2001-06-04', 'Japan', 'Real Sociedad', 173),
+('Takuma Asano', 'FW', '1994-11-10', 'Japan', 'Mallorca', 173),
+('Ao Tanaka', 'MF', '1998-09-10', 'Japan', 'Leeds United', 180),
+('Takumi Minamino', 'FW', '1995-01-16', 'Japan', 'AS Monaco', 174),
+('Junya Ito', 'FW', '1993-03-09', 'Japan', 'Reims', 176),
+('Hidemasa Morita', 'MF', '1995-05-10', 'Japan', 'Sporting CP', 177),
+('Ayase Ueda', 'FW', '1998-08-28', 'Japan', 'Feyenoord', 182),
+('Daizen Maeda', 'FW', '1997-10-20', 'Japan', 'Celtic', 173),
+('Reo Hatate', 'MF', '1997-11-21', 'Japan', 'Celtic', 171),
+('Kyogo Furuhashi', 'FW', '1995-01-20', 'Japan', 'Celtic', 170),
